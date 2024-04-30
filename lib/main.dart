@@ -63,6 +63,7 @@ class ProfileHome extends StatelessWidget {
               SizedBox(height: 20.h,),
               Wrap(children: [Text(textAlign: TextAlign.center,para, style: TextStyle( color: Colors.black, fontSize: 16.sp
               ),)]),
+              SizedBox(height: 50.h,),
             ],
           ),
         ),
