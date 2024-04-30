@@ -53,7 +53,7 @@ class ProfileHome extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: Colors.green,
                   shape: BoxShape.circle,
-                  image: DecorationImage(image: AssetImage("images/profile.jpg"),),
+                  image: DecorationImage(image: AssetImage("images/profile.jpg"), fit: BoxFit.fill),
                 ),
               ),
               SizedBox(height: 20,),
