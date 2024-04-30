@@ -1,5 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 void main() {
   runApp(ProfileApp());
@@ -60,7 +60,7 @@ class ProfileHome extends StatelessWidget {
               Text("Dev Asib", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),),
               Text("mail.asib.com@gmail.com", style: TextStyle(fontSize: 20, color: Colors.grey),),
               SizedBox(height: 20,),
-              Wrap(children: [Text(textAlign: TextAlign.center,para, style: TextStyle(
+              Wrap(children: [Text(textAlign: TextAlign.center,para, style: TextStyle( color: Colors.black
               ),)]),
             ],
           ),
