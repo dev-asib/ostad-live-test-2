@@ -25,6 +25,9 @@ class ProfileHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+      ),
       body: Padding(
         padding:  EdgeInsets.all(12.0),
         child: SingleChildScrollView(
@@ -32,7 +35,6 @@ class ProfileHome extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              SizedBox(height: 50,),
               Text(
                 "Profile",
                 style: TextStyle(
