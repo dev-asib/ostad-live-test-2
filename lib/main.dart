@@ -10,9 +10,12 @@ class ProfileApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: ProfileHome(),
+    return ScreenUtilInit(
+      builder:(_ , child)=> MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: ProfileHome(),
+      ),
+      designSize: const Size(360, 640),
     );
   }
 }
@@ -25,42 +28,40 @@ class ProfileHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-      ),
       body: Padding(
-        padding:  EdgeInsets.all(12.0),
+        padding:  EdgeInsets.symmetric(horizontal: 10.0.r),
         child: SingleChildScrollView(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
+              SizedBox(height: 56,),
               Text(
                 "Profile",
                 style: TextStyle(
-                  fontSize: 25,
+                  fontSize: 25.sp,
                   fontWeight: FontWeight.bold,
                 ),
               ),
 
               SizedBox(
-                height: 50,
+                height: 50.h,
               ),
 
               Container(
-                height: 200,
-                width: 200,
+                height: 180.w,
+                width: 180.w,
                 decoration: BoxDecoration(
                   color: Colors.green,
                   shape: BoxShape.circle,
                   image: DecorationImage(image: AssetImage("images/profile.jpg"), fit: BoxFit.fill),
                 ),
               ),
-              SizedBox(height: 20,),
-              Text("Dev Asib", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),),
-              Text("mail.asib.com@gmail.com", style: TextStyle(fontSize: 20, color: Colors.grey),),
-              SizedBox(height: 20,),
-              Wrap(children: [Text(textAlign: TextAlign.center,para, style: TextStyle( color: Colors.black
+              SizedBox(height: 20.h,),
+              Text("Dev Asib", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25.sp),),
+              Text("mail.asib.com@gmail.com", style: TextStyle(fontSize: 25.sp, color: Colors.grey),),
+              SizedBox(height: 20.h,),
+              Wrap(children: [Text(textAlign: TextAlign.center,para, style: TextStyle( color: Colors.black, fontSize: 16.sp
               ),)]),
             ],
           ),
